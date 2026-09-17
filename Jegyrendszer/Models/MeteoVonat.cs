@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Jegyrendszer.Models
 {
-    internal class MeteoVonat : Utazas
+    public class MeteoVonat : Utazas
     {
         public MeteoVonat(int alapdij, double tavolsag) : base(alapdij, tavolsag){ }
 

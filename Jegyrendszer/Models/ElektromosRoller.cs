@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Jegyrendszer.Models
 {
-    internal class ElektromosRoller
+    public class ElektromosRoller : Utazas
     {
+        public ElektromosRoller(double tavolsag) : base(0, tavolsag) { }
+
+        public override int ArSzamitas()
+        {
+            return (int)(Tavolsag * 120);
+        }
     }
 }
