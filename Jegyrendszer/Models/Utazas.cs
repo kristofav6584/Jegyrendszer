@@ -6,7 +6,17 @@ using System.Threading.Tasks;
 
 namespace Jegyrendszer.Models
 {
-    internal class Utazas
+    public abstract class Utazas
     {
+        public int Alapdij {  get; set; }
+        public double Tavolsag { get; set; }
+
+        protected Utazas(int alapdij, double tavolsag)
+        {
+            Alapdij = alapdij;
+            Tavolsag = tavolsag;
+        }
+
+        public abstract int ArSzamitas();
     }
 }
